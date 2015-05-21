@@ -1,0 +1,3 @@
+config:
+  default/design/head/js: 1
+  default/design/head/css: 1

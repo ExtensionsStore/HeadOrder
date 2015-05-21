@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Aydus_HeadOrder config
+ *
+ * @category   Aydus
+ * @package    Aydus_HeadOrder
+ * @author     Aydus <davidt@aydus.com>
+ */
+-->
+<config>
+    <modules>
+        <Aydus_HeadOrder>
+            <version>0.9.0</version>
+        </Aydus_HeadOrder>
+    </modules>
+    <phpunit>
+        <suite>
+            <modules>
+                <Aydus_HeadOrder />
+            </modules>
+        </suite>
+    </phpunit>  
+    <frontend>
+        <events>
+            <controller_action_layout_generate_blocks_after>
+                <observers>
+                    <aydus_headorder>
+                        <class>aydus_headorder/observer</class>
+                        <method>reorderHeadItems</method>
+                    </aydus_headorder>
+                </observers>
+            </controller_action_layout_generate_blocks_after>
+        </events>        
+    </frontend>    
+    <global> 
+        <helpers>
+            <aydus_headorder>
+                <class>Aydus_HeadOrder_Helper</class>
+            </aydus_headorder>        
+        </helpers>          
+        <models>
+            <aydus_headorder>
+                <class>Aydus_HeadOrder_Model</class>
+            </aydus_headorder>        
+        </models>             
+    </global>         
+</config>

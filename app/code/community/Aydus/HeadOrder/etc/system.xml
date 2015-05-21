@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * Aydus_HeadOrder system config
+ *
+ * @category   Aydus
+ * @package    Aydus_HeadOrder
+ * @author     Aydus <davidt@aydus.com>
+ */
+-->
+<config>
+    <sections>
+        <design>
+            <groups>
+                <head>
+                    <fields>
+                        <js translate="label comment" module="aydus_headorder">
+                            <label>Javascript Order</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>75</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[Enter order of Javascript files, one per line.]]></comment>
+                        </js> 
+                        <css translate="label comment" module="aydus_headorder">
+                            <label>CSS Order</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>76</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[Enter order of CSS files, one per line.]]></comment>
+                        </css>                         				
+                    </fields>
+                </head>
+            </groups>
+        </design>
+    </sections>
+</config>
+
