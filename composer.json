@@ -1,0 +1,18 @@
+{
+    "name": "aydus/headorder",
+    "license": "GPL-3.0",
+    "type": "magento-module",
+    "description": "Order Javascript and CSS files in the head block.",
+    "homepage": "https://github.com/aydus/HeadOrder.git",
+    "require": {
+        "php": ">=5.3",
+        "magento-hackathon/magento-composer-installer": "*"
+    },
+    "authors": [
+        {
+            "name": "David Tay",
+            "email": "davidt@aydus.com",
+            "role": "Author/Maintainer"
+        }
+    ]
+}
